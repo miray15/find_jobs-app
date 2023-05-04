@@ -46,4 +46,11 @@ class InquiriesController < ApplicationController
       redirect_to "/inquiries"
     end
   
+
+    def destroy
+      @inquiry = Inquiry.find_by(id: params[:id])
+      @inquiry.destroy
+      redirect_to "/inquiries", status: :see_other
+    end
+    
 end
