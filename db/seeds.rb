@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# inquiry = Inquiry.create(title:"Apprentice", description: "Work alongside other staff members to develop skills", company: "Google", salary: 60, remote: "yes", next_steps: "Wait a month"), 
+
+
+# inquiry = Inquiry.create(title:"Software Engineer - Front-end", description: "The Software Engineer is responsible for assisting in developing and designing a product that Home Depot customers and associates will love. As a Software Engineer, you will be part of a dynamic team with engineers of all experience levels who help each other build and grow technical and leadership skills while creating, deploying, and supporting production applications. In addition, Software Engineers may be involved in product configuration, security, resilience, performance tuning and production monitoring.", company: "The Home Depot", salary: 85, remote: "yes", next_steps: "wait"), 
+
+# inquiry = Inquiry.create(title:"Ruby on Rails engineer", description: "Aha! engineering is a mid-sized, fully remote team that is highly productive. We are centered around North American time zones so we can collaborate during the workday. We help each other grow: We each bring unique skills to the table and want our teammates to feel valued from the start. Our onboarding program exposes new hires to the codebase and lets them contribute right away. We move quickly: We ship code multiple times a day. We believe in getting valuable features in front of customers and iteratively improving as we learn what works and what does not.
+#   We value product over process: We want the team to have the time and focus on solving complex challenges. We minimize the overhead by setting clear goals and avoiding heavyweight processes and excessive meetings.We share knowledge freely: We share our learnings with each other and with the developer community. Our engineering blog demonstrates how we tackle interesting challenges at Aha! We enjoy: We like what we do. And we want you to love your team and your job too. Learn more about The Responsive Method , our company values , and the generous benefits we offer.", company: "Aha!", salary: 100, remote: "yes", next_steps: "Wait a few weeks")
+
+
+
