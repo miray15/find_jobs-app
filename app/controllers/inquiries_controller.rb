@@ -5,5 +5,8 @@ class InquiriesController < ApplicationController
       render :index
     end
 
-
+    def show
+      @inquiry = Inquiry.find_by(id: params[:id])
+      render :show
+    end
 end
