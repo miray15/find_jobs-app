@@ -1,0 +1,10 @@
+<h1>All jobs</h1>
+<% @inquiries.each do |inquiry| %>
+  <h2><%= inquiry.title %></h2>
+  <p>Description: <%= inquiry.description %></p>
+  <p>company: <%= inquiry.company %></p>
+  <p>Salary: <%= inquiry.saalary %></p>
+  <p>remote: <%= inquiry.remote %></p>
+  <p>Next Steps: <%= inquiry.next_steps %></p>
+
+<% end %>
