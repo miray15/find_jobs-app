@@ -9,4 +9,23 @@ class InquiriesController < ApplicationController
       @inquiry = Inquiry.find_by(id: params[:id])
       render :show
     end
+
+
+    def new
+      @inquiry = Inquiry.new
+      render :new
+    end
+  
+    def create
+      @inquiry = Inquiry.create(
+        title: params[:inquiry][:title],
+        description: params[:inquiry][:description],
+        company: params[:inquiry][:company],
+        salary: params[:inquiry][:salary],
+        remote: params[:inquiry][:remote],
+        next_steps: params[:inquiry][:company],
+      )
+      redirect_to "/inquiries"
+    end
+  
 end
