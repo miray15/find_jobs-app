@@ -1,0 +1,31 @@
+<h1>Edit job</h1>
+<%= form_with model: @inquiry do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :job_description %>
+    <%= form.text_field :job_description %>
+  </div>
+  <div>
+    <%= form.label :company %>
+    <%= form.text_field :company %>
+  </div>
+   <div>
+    <%= form.label :salary %>
+    <%= form.text_field :salary %>
+  </div>
+   <div>
+    <%= form.label :remote %>
+    <%= form.text_field :remote %>
+  </div>
+   <div>
+    <%= form.label :next_steps %>
+    <%= form.text_field :next_steps %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end%>
